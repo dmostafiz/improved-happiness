@@ -15,7 +15,7 @@ after publish you will get all essential files (views, contollers, models, migra
 
 Then publish LaraLTE assets
 
-    php artisan vendor:publish --tag=laralte-essentials --force
+    php artisan vendor:publish --tag=laralte-assets --force
 
 it will publish all the asstes (css, js, images) of AdminLTE 3 in your public folder
 
