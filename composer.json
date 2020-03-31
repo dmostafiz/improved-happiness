@@ -1,0 +1,26 @@
+{
+    "name": "mostafiz/laralte",
+    "description": "In a starting laravel application this is a easy sollution to integret adminlte",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mostafiz",
+            "email": "dev.mostafiz@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Mostafiz\\LaraLte\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mostafiz\\LaraLte\\LteServiceProvider"
+            ]
+        }
+    }
+}
