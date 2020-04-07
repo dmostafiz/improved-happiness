@@ -12,7 +12,9 @@ class LteServiceProvider extends ServiceProvider{
         ], 'laralte-assets');
 
         $this->publishes([
+            __DIR__.'/database/migrations' => base_path('database/migrations/'),
             __DIR__.'/Http/Controllers' => app_path('Http/Controllers/'),
+            __DIR__.'/Mail' => app_path('Mail/'),
             __DIR__.'/routes' => base_path('routes/'),
             __DIR__.'/config/laralte.php' => config_path('laralte.php'),
             __DIR__.'/views'=> resource_path('views/'),

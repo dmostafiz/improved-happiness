@@ -21,7 +21,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-
   @stack('header')
 </head>
 <body class="hold-transition sidebar-mini">
@@ -69,5 +68,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="//cdn.tiny.cloud/1/n07kqhwmimi936tsx8nh222m7jrwbweyy7yowcwx8gjtmyol/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
 @stack('footer')
+
+<script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/toastr.js/latest/js/toastr.min.js"></script>
+{!! Toastr::message() !!} 
 </body>
 </html>
