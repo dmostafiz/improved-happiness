@@ -113,4 +113,11 @@ class ProfileController extends Controller
         return redirect()->route('user.profile');
 
     }
+
+    public function logout()
+    {
+        auth()->logout();
+        
+        return redirect()->back();
+    }
 }

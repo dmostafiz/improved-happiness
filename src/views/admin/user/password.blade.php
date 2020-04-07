@@ -24,7 +24,7 @@
 <div class="content">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-6">
+      <div class="col-lg-12">
         <div class="card card-dark">
             <div class="card-header">
               <h3 class="card-title">Update password</h3>
@@ -35,30 +35,33 @@
                 @csrf
                 <div class="card-body">
 
-                    <div class="form-group">
-                      <label for="name">Current Password</label>
-                      @error('current_password')
-                       - <span class="text-danger">{{ $message }}</span>
-                      @enderror
-                      <input type="password" class="form-control" value="" id="current_password" placeholder="Enter current password" name="current_password" autocomplete="new-password">
+                  <div class="row">
+                    <div class="col-md-6 offset-md-3">
+                      <div class="form-group">
+                        <label for="name">Current Password</label>
+                        @error('current_password')
+                         - <span class="text-danger">{{ $message }}</span>
+                        @enderror
+                        <input type="password" class="form-control" value="" id="current_password" placeholder="Enter current password" name="current_password" autocomplete="new-password">
+                      </div>
+    
+                      <div class="form-group">
+                        <label for="name">New Password</label>
+                        @error('password')
+                         - <span class="text-danger">{{ $message }}</span>
+                        @enderror
+                        <input type="password" class="form-control" id="password" placeholder="Enter new password" name="password">
+                      </div>
+    
+                      <div class="form-group">
+                        <label for="email">Confirm password</label>
+                        @error('password_confirmation')
+                         - <span class="text-danger">{{ $message }}</span>
+                        @enderror
+                        <input type="password" class="form-control" id="password_confirmation" placeholder="Enter password confirmation" name="password_confirmation">
+                      </div>
                     </div>
-
-                    <div class="form-group">
-                      <label for="name">New Password</label>
-                      @error('password')
-                       - <span class="text-danger">{{ $message }}</span>
-                      @enderror
-                      <input type="password" class="form-control" id="password" placeholder="Enter new password" name="password">
-                    </div>
-
-                    <div class="form-group">
-                      <label for="email">Confirm password</label>
-                      @error('password_confirmation')
-                       - <span class="text-danger">{{ $message }}</span>
-                      @enderror
-                      <input type="password" class="form-control" id="password_confirmation" placeholder="Enter password confirmation" name="password_confirmation">
-                    </div>
-
+                  </div>
                 </div>
                 <!-- /.card-body -->
       
@@ -68,10 +71,7 @@
             </form>
         </div>
       </div>
-      <!-- /.col-md-6 -->
-      <div class="col-lg-6">       
-      </div>
-      <!-- /.col-md-6 -->
+      <!-- /.col-md-12 -->
     </div>
     <!-- /.row -->
   </div>

@@ -24,4 +24,6 @@ function(){
     Route::get('/profile/change-password', 'ProfileController@changePassword') ->name('profile.password');
     Route::post('/profile/{id}/update', 'ProfileController@updateEdit') ->name('profile.update');
     Route::post('/password/{id}/update', 'ProfileController@updatePassword') ->name('password.update');
+    Route::get('admin/logout', 'ProfileController@logout')->name('admin.logout');
+
 });

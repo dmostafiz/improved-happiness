@@ -43,8 +43,6 @@
             <div class="card">
                 <div class="card-header">
                     <h3 class="card-title">User detailes</h3>
-                    <a class="btn btn-primary btn-sm mr-1" href="{{ route('profile.edit') }}">Edit profile</a>
-                    <a class="btn btn-info btn-sm ml-1" href="{{ route('profile.password') }}">Change password</a>
                 </div>
                 <!-- /.card-header -->
                 <div class="card-body">
